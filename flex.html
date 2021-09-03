@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://assets.turkmedya.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/font/spr-icon.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" as="image" href="/assets/img/sprite.png">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" type="image/png" href="/assets/img/aksam-favicon.png">
+    <link rel="apple-touch-icon" href="/assets/img/aksam-apple-touch-icon.png">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+      .swiper-slide {
+      background: #ddd;
+      color: #000;
+      text-align: center;
+      line-height: 300px;
+      }
+      .swiper-pagination{
+      	margin:0 -.4rem;
+      }
+      .swiper-pagination-bullet{
+      	width: .8rem;
+      	height: .8rem;
+      	background-color: #ddd;
+      	border-radius: 50%;
+      	margin: 0 .4rem;
+      }
+      .swiper-pagination-bullet-active{
+      	background-color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="spr">
+      <div class="header-main background-primary padding-vertical-sm shadow">
+        <div class="container">
+          <div class="flex middle"><a href="#0">
+              <div class="icon icon-aksam"></div></a></div>
+        </div>
+      </div>
+      <div class="header-sub padding-vertical-sm shadow mb-hide">
+        <div class="container">
+          <div class="flex between">
+            <ul class="color-white flex middle end space-horizontal-md font-size-12 font-weight-500">
+              <li><a href="#0">FUTBOL</a></li>
+              <li><a href="#0">BASKETBOL</a></li>
+              <li><a href="#0">DİĞER SPORLAR</a></li>
+              <li><a href="#0">PUAN DURUMU</a></li>
+              <li><a href="#0">FİKSTÜR</a></li>
+              <li><a href="#0">CANLI SKOR</a></li>
+              <li><a href="#0">YAZARLAR</a></li>
+            </ul>
+            <ul class="color-white flex middle end space-horizontal-md font-size-10 font-weight-500">
+              <li><a class="flex middle" href="#0">
+                  <div class="margin-right-sm">Akşam Spor</div>
+                  <div class="spr-icon icon-arrow-right-alt font-size-18"></div></a></li>
+              <li><a class="flex middle" href="#0">
+                  <div class="margin-right-sm">Akşam Anasayfa</div>
+                  <div class="spr-icon icon-arrow-right-alt font-size-18"></div></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="margin-top-lg margin-bottom-lg">
+        <header class="margin-bottom-md background-primary color-white mb-mobile">
+          <div class="container">
+            <div class="wrapper height-sm flex middle"><span class="margin-right-lg">LOGO</span></div>
+          </div>
+        </header>
+        <header class="relative margin-bottom-md background-primary color-white hide-desktop">
+          <input id="mobileMenu" type="checkbox" hidden="">
+          <label class="overlay menu-overlay cursor-pointer fixed" for="mobileMenu" onClick="enableBodyScroll(menuElement)"></label>
+          <ul class="menu-list column fixed color-white background-black" id="mobileMenuList">
+            <li class="menu-list-item padding-horizontal-md line-height-lg cursor-pointer">Anasayfa</li>
+            <li class="menu-list-item padding-horizontal-md line-height-lg cursor-pointer">Anasayfa</li>
+            <li class="menu-list-item padding-horizontal-md line-height-lg cursor-pointer">Anasayfa</li>
+          </ul>
+          <div class="container">
+            <div class="wrapper flex width-full">
+              <div class="flex start middle equal height-sm">
+                <label for="mobileMenu" onClick="disableBodyScroll(menuElement)">MENU</label>
+              </div>
+              <div class="flex center middle equal height-sm">LOGO</div>
+              <div class="flex end middle equal height-sm">
+                <label for="mobileSearch">SEARCH</label>
+              </div>
+            </div>
+          </div>
+        </header>
+        <h1 class="font-size-40 md-font-size-24 sm-font-size-12 text-center margin-bottom-md">helllo</h1>
+        <main class="background-primary color-white padding-vertical-lg">
+          <div class="container">
+            <ul class="row mb-space-vertical-md">
+              <li class="col-4 col-md-12 col-lg-6">card1
+                <div class="relative"><a class="full-link" href="#0"></a>
+                  <div class="media-wrapper"><img src="https://source.unsplash.com/random" alt=""></div>
+                  <div class="padding-vertical-md">
+                    <h3 class="line-camp line-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem labore, tenetur animi eaque maxime dolore</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="col-4 col-md-12 col-lg-6">card2
+                <div class="relative"><a class="full-link" href="#0"></a>
+                  <div class="cover height-lg" style="background-image:url('https://source.unsplash.com/random')"></div>
+                  <div class="padding-vertical-md">
+                    <h3 class="line-camp line-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem labore, tenetur animi eaque maxime dolore</h3>
+                  </div>
+                </div>
+              </li>
+              <li class="col-4 col-md-12 col-lg-6">card3
+                <div class="relative"><a class="full-link" href="#0"></a>
+                  <div class="media-wrapper gradient"><img src="https://source.unsplash.com/random" alt=""></div>
+                  <h3 class="line-camp line-2 padding-horizontal-md color-white absolute left-0 bottom-0 margin-bottom-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem labore, tenetur animi eaque maxime dolore</h3>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </main>
+        <main>
+          <div class="container">
+            <ul class="row space-vertical-md">
+              <li class="col-4 col-md-12">card4
+                <div class="relative"><a class="full-link" href="#0"></a>
+                  <div class="media-wrapper"><img src="https://source.unsplash.com/random" alt=""></div>
+                  <div class="padding-vertical-md">
+                    <h3 class="line-camp line-2"></h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem labore, tenetur animi eaque maxime dolore
+                  </div>
+                </div>
+              </li>
+              <li class="col-4 col-md-12">card5
+                <div class="border">
+                  <div class="relative"><a class="full-link" href="#0"></a>
+                    <div class="media-wrapper"><img src="https://source.unsplash.com/random" alt=""></div>
+                    <div class="padding-md">
+                      <h3 class="line-camp line-2"></h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem labore, tenetur animi eaque maxime dolore
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="col-4 col-md-12">card6
+                <div class="shadow">
+                  <div class="relative"><a class="full-link" href="#0"></a>
+                    <div class="media-wrapper"><img src="https://source.unsplash.com/random" alt=""></div>
+                    <div class="padding-md">
+                      <h3 class="line-camp line-2"></h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem labore, tenetur animi eaque maxime dolore
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="col-4 col-md-12">
+                <ul class="column border-bottom">
+                  <li>List</li>
+                  <li>
+                    <div class="relative"><a class="full-link" href="#0"></a>
+                      <div class="flex nowrap">
+                        <div class="height-md width-md margin-right-md">
+                          <div class="media-wrapper vertical"><img src="https://source.unsplash.com/random" alt=""></div>
+                        </div>
+                        <div class="auto">
+                          <div>
+                            <h3 class="line-camp line-2"></h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem labore, tenetur animi eaque maxime dolore
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="relative"><a class="full-link" href="#0"></a>
+                      <div class="flex nowrap">
+                        <div class="height-sm width-sm margin-right-md">
+                          <div class="media-wrapper vertical"><img src="https://source.unsplash.com/random" alt=""></div>
+                        </div>
+                        <div class="auto">
+                          <div>
+                            <h3 class="line-camp line-2"></h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem labore, tenetur animi eaque maxime dolore
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="relative"><a class="full-link" href="#0"></a>
+                      <div class="row small">
+                        <div class="col-6">
+                          <div class="media-wrapper"><img src="https://source.unsplash.com/random" alt=""></div>
+                        </div>
+                        <div class="col-6">
+                          <div>
+                            <h3 class="line-camp line-2"></h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem labore, tenetur animi eaque maxime dolore
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="col-4 col-md-12">
+                <ul class="column margin-bottom">
+                  <li>Pagination</li>
+                  <li>
+                    <ul class="pagination flex middle center space-horizontal-sm color-white">
+                      <li class="multiple"><a class="block background-primary text-center radius-circle" href="#0"><i class="spr-icon icon-arrow-back-ios font-size-10"></i><i class="spr-icon icon-arrow-back-ios font-size-10"></i></a></li>
+                      <li><a class="block background-primary text-center radius-circle" href="#0"><i class="spr-icon icon-arrow-back-ios font-size-10"></i></a></li>
+                      <li><a class="block background-primary text-center active radius-circle" href="#0">1</a></li>
+                      <li><a class="block background-primary text-center active radius-circle" href="#0">2</a></li>
+                      <li class="text-center divider radius-circle">...</li>
+                      <li><a class="block background-primary text-center radius-circle" href="#0">3</a></li>
+                      <li class="multiple"><a class="block background-primary text-center radius-circle" href="#0"><i class="spr-icon icon-arrow-forward-ios font-size-10"></i><i class="spr-icon icon-arrow-forward-ios font-size-10"></i></a></li>
+                      <li><a class="block background-primary text-center radius-circle" href="#0"><i class="spr-icon icon-arrow-forward-ios font-size-10"></i></a></li>
+                    </ul>
+                  </li>
+                  <li>button</li>
+                  <li><a class="flex" href="#0">
+                      <div class="button radius-sm flex middle background-primary color-white"><i class="spr-icon icon-arrow-forward-ios margin-right-sm"></i><span>Button</span></div></a></li>
+                  <li>dropdown</li>
+                  <li>
+                    <ul>
+                      <li class="dropdown inline-block cursor-pointer relative"><span class="line-height-lg">Dropdown</span>
+                        <ul class="dropdown-select absolute display-none background-white shadow padding-vertical-sm right-0">
+                          <li class="dropdown-item"><a class="line-height-lg padding-horizontal-md block" href="#0">Select-1</a></li>
+                          <li class="dropdown-item"><a class="line-height-lg padding-horizontal-md block" href="#0">Select-2</a></li>
+                          <li class="dropdown-item"><a class="line-height-lg padding-horizontal-md block" href="#0">Select-2</a></li>
+                          <li class="dropdown-item"><a class="line-height-lg padding-horizontal-md block" href="#0">Select-2</a></li>
+                          <li class="dropdown-item"><a class="line-height-lg padding-horizontal-md block" href="#0">Select-2</a></li>
+                          <li class="dropdown-item"><span class="line-height-lg padding-horizontal-md block">Select-2</span></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="flex">
+                    <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1">
+                    <label for="styled-checkbox-1">Checkbox</label>
+                  </li>
+                  <li class="flex">
+                    <input class="styled-checkbox" id="styled-checkbox-2" type="checkbox" value="value2" checked="">
+                    <label for="styled-checkbox-2">CSS Only</label>
+                  </li>
+                  <li class="flex">
+                    <input class="styled-checkbox" id="styled-checkbox-3" type="checkbox" value="value3" disabled="">
+                    <label for="styled-checkbox-3">A disabled checkbox</label>
+                  </li>
+                  <li class="flex">
+                    <input class="styled-checkbox" id="styled-checkbox-4" type="checkbox" value="value4">
+                    <label for="styled-checkbox-4">Fourth option</label>
+                  </li>
+                  <li class="flex">
+                    <input class="styled-checkbox radio" id="styled-radio-1" type="radio" name="radio" value="value1">
+                    <label for="styled-radio-1">Radio</label>
+                  </li>
+                  <li class="flex">
+                    <input class="styled-checkbox radio" id="styled-radio-2" type="radio" name="radio" value="value2" checked="">
+                    <label for="styled-radio-2">CSS Only</label>
+                  </li>
+                  <li class="flex">
+                    <input class="styled-checkbox radio" id="styled-radio-3" type="radio" name="radio" value="value3" disabled="">
+                    <label for="styled-radio-3">A disabled radio</label>
+                  </li>
+                  <li class="flex">
+                    <input class="styled-checkbox radio" id="styled-radio-4" type="radio" name="radio" value="value4">
+                    <label for="styled-radio-4">Fourth option</label>
+                  </li>
+                </ul>
+              </li>
+              <li class="col-12">
+                <ul class="row margin">
+                  <li class="col-12">
+                    <div class="height-sm">layout-1</div>
+                  </li>
+                  <li class="col-4 col-md-12">
+                    <ul class="column margin-bottom">
+                      <li>
+                        <div class="shadow">
+                          <div class="column">
+                            <div class="cover" style="height:400px;background-image:url('https://source.unsplash.com/random')"></div>
+                            <div style="height:100px;">
+                              <h3 class="line-camp line-2 padding-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem labore, tenetur animi</h3>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="shadow">
+                          <div class="column">
+                            <div class="cover" style="height:400px;background-image:url('https://source.unsplash.com/random')"></div>
+                            <div style="height:100px;">
+                              <h3 class="line-camp line-2 padding-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem labore, tenetur animi</h3>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="col-4 col-md-12">
+                    <div class="shadow">
+                      <div class="column">
+                        <div class="cover" style="height:912px;background-image:url('https://source.unsplash.com/random')"></div>
+                        <div style="height:100px;">
+                          <h3 class="line-camp line-2 padding-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem labore, tenetur animi</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="col-4 col-md-12">
+                    <ul class="column margin-bottom">
+                      <li>
+                        <div class="shadow">
+                          <div class="column">
+                            <div class="cover" style="height:400px;background-image:url('https://source.unsplash.com/random')"></div>
+                            <div style="height:100px;">
+                              <h3 class="line-camp line-2 padding-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem labore, tenetur animi</h3>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="shadow">
+                          <div class="column">
+                            <div class="cover" style="height:400px;background-image:url('https://source.unsplash.com/random')"></div>
+                            <div style="height:100px;">
+                              <h3 class="line-camp line-2 padding-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem labore, tenetur animi</h3>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="col-12">
+                <div class="slider swiper-container">
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                    <div class="swiper-slide">Slide 10</div>
+                  </div>
+                  <div class="div">
+                    <div class="swiper-pagination flex height-sm"></div>
+                  </div>
+                  <div class="slider-pagination">
+                    <ul class="flex between">
+                      <li><a target="_blank" href="">1</a></li>
+                      <li><a target="_blank" href="">2</a></li>
+                      <li><a target="_blank" href="">3</a></li>
+                      <li><a target="_blank" href="">4</a></li>
+                      <li><a target="_blank" href="">5</a></li>
+                      <li><a target="_blank" href="">6</a></li>
+                      <li><a target="_blank" href="">7</a></li>
+                      <li><a target="_blank" href="">8</a></li>
+                      <li><a target="_blank" href="">9</a></li>
+                      <li><a target="_blank" href="">10</a></li>
+                      <li><a target="_blank" href="">11</a></li>
+                      <li><a target="_blank" href="">12</a></li>
+                      <li><a target="_blank" href="">13</a></li>
+                      <li><a target="_blank" href="">14</a></li>
+                      <li><a target="_blank" href="">15</a></li>
+                    </ul>
+                  </div>
+                  <div class="slider-arrow color-white"><i class="spr-icon icon-arrow-back-ios cursor-pointer absolute padding-sm font-size-24 center-vertical"></i><i class="spr-icon icon-arrow-forward-ios right-0 cursor-pointer absolute padding-sm font-size-24 center-vertical"></i></div>
+                </div>
+              </li>
+            </ul>
+            <div class="background-primary height-lg"></div>
+            <ul class="space-vertical-sm margin-bottom-md">
+              <li class="color-gray-light">gray light</li>
+              <li class="color-gray-medium">gray medium</li>
+              <li class="color-gray-dark">gray dark</li>
+            </ul>
+            <ul class="flex space-horizontal-sm margin-bottom-md">
+              <li class="spr-icon icon-youtube"></li>
+              <li class="spr-icon icon-facebook"></li>
+              <li class="spr-icon icon-instagram"></li>
+              <li class="spr-icon icon-twitter"></li>
+              <li class="spr-icon icon-whatsapp"></li>
+              <li class="spr-icon icon-arrow-left"></li>
+              <li class="spr-icon icon-arrow-right"></li>
+              <li class="spr-icon icon-arrow-drop-down"></li>
+              <li class="spr-icon icon-arrow-back"></li>
+              <li class="spr-icon icon-arrow-forward"></li>
+              <li class="spr-icon icon-arrow-back-ios"></li>
+              <li class="spr-icon icon-arrow-forward-ios"></li>
+              <li class="spr-icon icon-arrow-left-alt"></li>
+              <li class="spr-icon icon-arrow-right-alt"></li>
+              <li class="spr-icon icon-arrow-down-keyboard"></li>
+            </ul>
+            <div class="margin-bottom-lg">
+              <ul class="flex space-horizontal-md mb-column mb-space-vertical-md mb-space-horizontal-0">
+                <li>list1</li>
+                <li>list2</li>
+                <li>list3</li>
+                <li>list4</li>
+                <li>list5</li>
+                <li>list6</li>
+                <li>list7</li>
+                <li>list8</li>
+                <li>list9</li>
+                <li>list10</li>
+              </ul>
+            </div>
+            <ul class="flex between mb-column mb-space-vertical-md">
+              <li>list1</li>
+              <li>list2</li>
+              <li>list3</li>
+              <li>list4</li>
+              <li>list5</li>
+              <li>list6</li>
+              <li>list7</li>
+              <li>list8</li>
+              <li>list9</li>
+              <li>list10</li>
+            </ul>
+          </div>
+        </main>
+        <div class="popup">
+          <input id="popup" type="checkbox" hidden="">
+          <label class="display-none overlay cursor-pointer fixed" for="popup"></label>
+          <div class="display-none popup-wrapper absolute background-white radius-md">
+            <label class="popup-close absolute color-white cursor-pointer" for="popup">Close</label>
+            <div class="wrapper"><img class="responsive-image" src="https://source.unsplash.com/random" alt=""></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-main shadow margin-top-lg padding-lg background-primary color-white">
+        <div class="wrapper flex column text-center middle">
+          <div class="icon-aksam margin-bottom-md"></div>
+          <ul class="share flex space-horizontal-sm margin-bottom-md">
+            <li><a class="background-white color-primary padding-sm flex center middle radius-circle" href="#"><i class="spr-icon icon-facebook font-size-18"></i></a></li>
+            <li><a class="background-white color-primary padding-sm flex center middle radius-circle" href="#"><i class="spr-icon icon-twitter font-size-18"></i></a></li>
+            <li><a class="background-white color-primary padding-sm flex center middle radius-circle" href="#"><i class="spr-icon icon-instagram font-size-18"></i></a></li>
+            <li><a class="background-white color-primary padding-sm flex center middle radius-circle" href="#"><i class="spr-icon icon-youtube font-size-18"></i></a></li>
+          </ul>
+          <ul class="store flex space-horizontal-sm margin-bottom-lg">
+            <li><a href="#">
+                <div class="icon-appstore"></div></a></li>
+            <li><a href="#">
+                <div class="icon-googleplay"></div></a></li>
+          </ul>
+          <p class="font-size-10">Sitemizde yayınlanan haberlerin telif hakları gazete ve haber kaynaklarına aittir. İzin alınmadan, kaynak gösterilerek dahi iktibas edilemez.</p>
+        </div>
+      </div>
+      <form id="postLiveScore" action="/canli-skor" method="post">
+        <input id="CDate" hidden="" name="date">
+        <input id="CLeagueList" hidden="" name="leaguelists">
+      </form>
+    </div>
+    <script src="assets/js/min/scripts-min.js"></script>
+    <script>
+      var disableBodyScroll = bodyScrollLock.disableBodyScroll;
+      var enableBodyScroll = bodyScrollLock.enableBodyScroll;
+      var menuElement = document.querySelector("#mobileMenuList");
+      
+      var swiper = new Swiper({
+      	el: '.slider.swiper-container',
+      	followFinger: false,
+      	simulateTouch: false,
+      	loop:true,
+      	slidesPerView: 1,
+      	 pagination: {
+      		el: '.swiper-pagination',
+      		clickable: true
+      	},
+      	navigation: {
+      	nextEl: '.icon-arrow-forward-ios',
+      	prevEl: '.icon-arrow-back-ios',
+      	autoplay: {
+      		delay: 5000
+      	}
+      	},
+      	on: {
+      		slideChangeTransitionEnd: function (swiper) {
+      			var activeIndex = $('.slider .swiper-slide-active').data("swiper-slide-index");
+      			$('.slider .slider-pagination li').removeClass("active");
+      			$('.slider .slider-pagination li').eq(activeIndex).addClass("active");
+      		}
+      	}
+      });
+      
+      $('.slider .slider-pagination li').hover(function () {
+      	swiper.slideTo($(this).index() + 1);
+      });
+    </script>
+    <script>
+      $(document).ready(function(){
+      	flatpickr("#sprDate", {
+      		"locale": "tr",
+      		onChange: function(selectedDates, dateStr, instance) {
+      			window.location.href = 
+      			window.location.pathname + 
+      			"#" + dateStr;
+      		},
+      	});
+      	
+      	var sprLeagueChecked = [];
+      	$(".spr #league-search-list input").on("change", function () {
+      		sprLeagueChecked = [];
+      		$("#league-search-list input:checked").each(function(index,item){
+      				sprLeagueChecked.push($(this).val());
+      		});
+      			window.location.href = 
+      			window.location.pathname + 
+      			"#" + sprLeagueChecked.join(",");
+      	});
+      
+      	$(".spr .match-live-tab").on("click", function (event) {
+      		 $(".match-live-tab").removeClass("font-weight-700 background-primary color-white active");
+      		 $(".match-live-tab").addClass("color-gray-dark");
+      		 $(this).addClass("font-weight-700 background-primary color-white active");
+      		 $(this).removeClass("color-gray-dark");
+      		 $(".match-live-content").hide();
+      		 $(".match-live-content").eq($(".match-live-tab.active").index()).show();
+      	});
+      
+      	$(".spr .dropdown").on("click", function (event) {
+      		if ($(event.target).hasClass("drop-click-disable")) {
+      			return;
+      		}
+      		if ($(this).hasClass("active")) {
+      			$(this).removeClass("active");
+      		} else {
+      			event.stopPropagation();
+      			$(this).addClass("active");
+      		}
+      	});
+      
+      	$(document).on("click", function (event) {
+      		if ($(event.target).hasClass("drop-click-disable")) {
+      			return;
+      		}
+      		if ($(".spr .dropdown").hasClass("active")) {
+      			$(".spr .dropdown").removeClass("active");
+      		}
+      	});
+      
+      	$(".spr #league-search").on("keyup", function (e) {
+      		var text = $(this).val().toLowerCase();
+      		$(".spr #league-search-list li label").hide();
+      		$(".spr #league-search-list li label").each(function () {
+      			if (
+      				$(this)
+      					.text()
+      					.toLowerCase()
+      					.indexOf("" + text + "") != -1
+      			) {
+      				$(this).closest(".spr #league-search-list li label").show();
+      			}
+      		});
+      	});
+      
+      	if ($('#_mugs .row').height() > 234) {
+      		$('#_mugs').next().css('display','block');
+      	}else{
+      		$('#_mugs').next().css('display','none');
+      	}
+      
+      	if ($('.player_disability_table table').height() > 220) {
+      		$('.player_disability_table').next().css('display','block');
+      	}else{
+      		$('.player_disability_table').next().css('display','none');
+      	}
+      
+      	if ($('.player_transfer_container .player_transfer').height() > 190) {
+      		$('.player_transfer_container').next().css('display','block');
+      	}else{
+      		$('.player_transfer_container').next().css('display','none');
+      	}
+      
+      	$('.moreless-button').on('click', function(event) {        
+      		$(this).prev().toggleClass("expand");
+      		if ($(this).text() == "Daha Fazla") {
+      			$(this).text("Daha Az")
+      		} else {
+      			$(this).text("Daha Fazla")
+      		}
+      	});
+      
+      	//- Tab Js
+      
+      	$('#tabs-nav li:first-child').addClass('active');
+      	$('.tab-content').hide();
+      	$('.tab-content:first').show();
+      
+      	
+      	$('#tabs-nav li').click(function(){
+      		$('#tabs-nav li').removeClass('active');
+      		$(this).addClass('active');
+      		$('.tab-content').hide();
+      		
+      		var activeTab = $(this).find('a').attr('href');
+      		$(activeTab).fadeIn();
+      		return false;
+      	});
+      
+      	//- if ($(window).width()<768) {
+      	//- 	$(window).scroll(function() {    
+      	//- 		var scroll = $(window).scrollTop();
+      	//- 		if (scroll >= 700) {
+      	//- 			$(".tab_container_area").addClass("fixed_tm");
+      	//- 		}else{
+      	//- 			$(".tab_container_area").removeClass("fixed_tm");
+      	//- 		}
+      	//- 	}); 
+      	//- }
+      
+      	
+      
+      
+      
+      });
+    </script>
+  </body>
+</html>
